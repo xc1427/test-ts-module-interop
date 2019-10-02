@@ -1,0 +1,19 @@
+{
+  "name": "test-ts-interop-asdi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf build/*",
+    "build": "tsc -p ./",
+    "demo:star": "node build/import_star.js",
+    "demo:default": "node build/default_import.js",
+    "demo": "yarn demo:star && yarn demo:default"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  }
+}
